@@ -23,4 +23,4 @@ RUN bash --login plutus.sh
 # RUN bash --login -c "nix build -f default.nix plutus.haskell.packages.plutus-core"
 
 RUN bash --login -c "cd plutus && nix --extra-experimental-features nix-command build -f default.nix plutus.haskell.packages.plutus-core"
-
+RUN bash --login -c "cd plutus && nix-shell"
